@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="portfolio.css" />
     <title>Nikitha's - Portfolio</title>
@@ -16,6 +16,7 @@
     <nav class="nav-bar">
       <h1>Nikitha</h1>
 
+      <button class="nav_toggle" onclick="nav_toggle()">x</button>
       <ul class="nav">
         <li class="link"><a href="#about">about</a></li>
         <li class="link"><a href="#project">project</a></li>
@@ -100,7 +101,11 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
           />
         </div>
-
+        <div class="skills-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+          />
+        </div>
         <div class="skills-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
@@ -197,6 +202,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      function nav_toggle() {
+        var nav_toggle = document.querySelector(".nav_toggle");
+        nav_toggle.classList.toggle("show");
+        console.log("clicked");
+      }
     </script>
   </body>
 </html>
